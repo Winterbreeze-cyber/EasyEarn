@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Investment Simulator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Investment Simulation (Education Only)</h1>
+
+  <div class="login-box">
+    <input type="text" id="username" placeholder="Enter your username">
+    <button onclick="login()">Login</button>
+  </div>
+
+  <div id="dashboard" style="display:none;">
+    <h2>Welcome, <span id="user-name"></span>!</h2>
+
+    <label>Select VIP Level:</label>
+    <select id="vip-level" onchange="selectVIP()">
+      <option value="VIP1">VIP 1 (₵50)</option>
+      <option value="VIP2">VIP 2 (₵100)</option>
+      <option value="VIP3">VIP 3 (₵150)</option>
+      <option value="VIP4">VIP 4 (₵200)</option>
+    </select>
+
+    <p>Your Investment: ₵<span id="investment-amount">50</span></p>
+    <p>Virtual Balance: ₵<span id="virtual-balance">50</span></p>
+    <p>Hourly Earnings: ₵<span id="hourly-profit">2</span></p>
+  </div>
+
+  <h3>Live Activity Feed</h3>
+  <div id="feed"></div>
+
+  <p class="note">Note: This is a fictional educational simulator. No real money is involved.</p>
+
+  <script src="script.js"></script>
+</body>
+  </html>
